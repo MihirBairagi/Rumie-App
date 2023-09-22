@@ -1,0 +1,692 @@
+/* Use this file to add custom css to the theme. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lato&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 0.83vw;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+
+body {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+p,
+span,
+ul,
+li,
+blockquote {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+h2 {
+    font-size: 3.39rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 2.7rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-weight:600;
+}
+h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h6 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    position: relative;
+    width: max-content;
+    padding: 0 2.8rem;
+    padding-right: 3.5rem;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+
+
+
+p {
+    color: #6C6D70;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+p strong {
+    color: #7e7e7e;
+    font-weight: 600;
+}
+.small-para {
+  font-size: 1.22rem;
+  line-height: 1.52;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+a{
+    font-size: 1.22rem;
+}
+
+
+
+
+
+
+
+/* Common Classes Start */
+
+section {
+    /* max-width: 1920px; */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 5rem;
+    margin: 0 auto;
+  }
+  .com-padding {
+    padding: 10rem 0;
+  }
+
+
+
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-justify{
+    text-align: justify;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .align-start {
+    align-items: flex-start;
+  }
+  .align-end {
+    align-items: flex-end;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .margin-auto{
+    margin: auto;
+  }
+  .margin-x-auto {
+    margin: 0 auto;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .mr-auto {
+    margin-right: auto;
+  }
+  .mt-1{
+    margin-top: 1rem;
+  }
+  .mt-2{
+    margin-top: 2rem;
+  }
+  .mt-3 {
+    margin-top: 3rem;
+  }
+  .mt-4 {
+    margin-top: 4rem;
+  }
+  .mt-5 {
+    margin-top: 5rem;
+  }
+  .mt-6 {
+    margin-top: 6rem;
+  }
+  
+  
+  .mb-2{
+    margin-bottom: 2rem;
+  }
+  .mb-3 {
+    margin-bottom: 3rem;
+  }
+  .mb-4 {
+    margin-bottom: 4rem;
+  }
+  .mb-5 {
+    margin-bottom: 5rem;
+  }
+  .mb-6 {
+    margin-bottom: 6rem;
+  }
+  .mb-7 {
+    margin-bottom: 7rem;
+  }
+  
+  .pt-3 {
+    padding-top: 3rem;
+  }
+  .pt-4 {
+    padding-top: 4rem;
+  }
+  .pt-5 {
+    padding-top: 5rem;
+  }
+  
+
+  
+  
+  .w-10 {
+    width: 10%;
+  }
+  .w-20 {
+    width: 20%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+  .w-30 {
+    width: 30%;
+  }
+  .w-33 {
+    width: 33.33%;
+  }
+  .w-35 {
+    width: 35%;
+  }
+  .w-40 {
+    width: 40%;
+  }
+  .w-45{
+    width: 45%;
+  }
+  .w-47{
+    width: 47%;
+  }
+  .w-48{
+    width: 48%;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-55 {
+    width: 55%;
+  }
+  .w-57 {
+    width: 57%;
+  }
+  .w-60 {
+    width: 60%;
+  }
+  .w-65 {
+    width: 65%;
+  }
+  .w-70 {
+    width: 70%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .w-80 {
+    width: 80%;
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  
+
+
+  .text-white,
+  .text-white * {
+    color: #fff;
+  }
+
+  .relative {
+    position: relative;
+  }
+  .uppercase{
+    text-transform: uppercase;
+  }
+
+
+/* Common Classes end */
+
+
+
+
+
+
+
+section.product-outer-section {
+    background: #f4f6f9;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+}
+
+
+.border-bg{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px #D8DBE099;
+    height: 100%;
+}
+
+ul.product-listing li {
+    width: 29.5%;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+ul.product-listing li:hover img{
+    border: 3px solid #8F00DB;
+}
+
+.no-product-detail {
+    padding: 2rem;
+}
+
+.no-product-detail .text-box::after{
+    background: url(../img/curv-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 62%;
+    bottom: -69%;
+    left: 41%;
+}
+ul.product-listing .img-box img {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 3px solid transparent;
+}
+ul.product-listing li h5 {
+    position: absolute;
+    bottom: 0;
+    padding: 1.8rem;
+    font-size: 1.3rem;
+}
+ul.product-listing.flex-box {
+    margin: 0 -1rem;
+}
+.no-product-detail p {
+    font-size: 1rem;
+}
+.no-product-detail h4 {
+    font-size: 1.7rem;
+}
+.brand-name-box h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.35rem;
+}
+.brand-name-box p.small-para {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+}
+.logo-box .icon-box {
+    width: 4.3rem;
+    margin-right: 0.7rem;
+}
+.logo-box .icon-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.product-listing-box .head-box {
+    border-bottom: 1px solid #E8E4F5;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
+}
+.no-product-detail .img-box {
+    text-align: center;
+}
+.no-product-detail .img-box img {
+    width: 93%;
+}
+
+
+.product-listing-box .head-box .logo-box {
+    width: 30%;
+}
+ul.customer-detail-box {
+    width: 61%;
+}
+
+ul.customer-detail-box li p {
+    font-size: 0.9rem;
+    color: #6C6D70;
+}
+ul.customer-detail-box li h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+ul.customer-detail-box li {
+    width: 27.5%;
+    border-right: 1px solid #E8E4F5;
+    margin-right: 1.2rem;
+}
+ul.customer-detail-box li:last-child {
+    border-right: 0;
+    margin-right: 0;
+}
+
+
+.product-detail-box.border-bg {
+    padding: 2.5rem;
+}
+.product-sub-detail .img-box {
+    width: 38%;
+}
+
+.product-sub-detail .text-box {
+    width: 57.5%;
+}
+
+.product-sub-detail .text-box h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+}
+.product-sub-detail .text-box h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+.how-many-days h3 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
+}
+.date-n-price-box h5 {
+    margin-bottom: 0 !important;
+}
+.monthly-budget {
+    width: 40%;
+    border: 1px solid #E8E4F5;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+}
+.live-since {
+    width: 52%;
+    border: 1px solid #E8E4F5;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+    padding-right: 0.3rem;
+}
+
+.how-many-days.text-center h5 {
+    font-size: 1rem;
+}
+.how-many-days.text-center {
+    background: #E8E4F5;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.product-stats-box .date-picker-box {
+    width: 45%;
+}
+
+.date-picker {
+    margin-left: 1rem;
+    width: 65%;
+}
+.date-picker input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border: none;
+    border: 1px solid #E8E4F5;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    color: #000;
+    cursor: pointer;
+}
+.date-picker input::placeholder {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+}
+.product-sub-detail {
+    border-bottom: 1px solid #E8E4F5;
+    padding-bottom: 2.5rem;
+}
+
+ul.product-stats-detail li h4 {
+    margin: 0;
+}
+ul.product-stats-detail li {
+    width: 23%;
+    background: #D9CAFF;
+    padding: 1.2rem 1.8rem;
+    border-radius: 1.3rem;
+}
+ul.product-stats-detail li:nth-child(2){
+    background: #B5E9F9;
+}
+ul.product-stats-detail li:nth-child(3){
+    background: #FFE3C9;
+}
+ul.product-stats-detail li:nth-child(4){
+    background: #D3F3E2;
+}
+
+.pie-chart .img-box {
+    width: 60%;
+}
+.pie-chart .text-box {
+    width: 30%;
+}
+.pie-chart .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.pie-chart ul li {
+    list-style: disc;
+    font-size: 1.5rem;
+    margin: 0.6rem 0;
+}
+ul.clcik-by-listing li h4 {
+    margin: 0;
+    margin-right: 0.8rem;
+}
+ul.clcik-by-listing li {
+    padding: 0.8rem 1.52rem;
+    background: #F6F4FD;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+ul.clcik-by-listing{
+    margin-bottom: -1rem;
+}
+ul.clcik-by-listing li .batch {
+    padding: 0.8rem;
+    background: #fff;
+    border-radius: 0.8rem;
+}
+.product-sub-detail .img-box img {
+    border-radius: 1.5rem;
+}
+
+
+.chart-legend {
+  display: none !important;
+}
+.pie-chart .text-box {
+  width: 30%;
+  display: none;
+}
+
+
+/* ======================================= */
+
+          /* media started  */
+
+/* ======================================= */
+
+@media all and (min-width: 1440px){   
+    html {
+        font-size: 0.7rem;
+    }
+
+}
+
